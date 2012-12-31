@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-  <title>PropertyCross | {{ page.title }}</title>
+  <title>PropertyCross{% if page.title %} | {{ page.title }}{% endif %}</title>
+  <meta name="description" content="Helping you select a cross-platform mobile framework - Apps using jQuery Mobile, Sencha Touch, Titanium and more">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--[if lt IE 9]>
   <script src="{{ site.baseurl }}/scripts/html5shiv.js"></script>
